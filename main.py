@@ -39,9 +39,9 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-API_ID    = os.environ.get("API_ID", "25058732")
-API_HASH  = os.environ.get("API_HASH", "2b3f91185db338bbbfcd2bd9b1dc9875")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8167039724:AAEy_-4e9UKDAvyDmGOWPLdULKVmQzlBxSQ") 
+API_ID    = os.environ.get("API_ID", "81552525")
+API_HASH  = os.environ.get("API_HASH", "8665b5cc6a77a5634a6e941c70564176")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7433144606:AAH1I0MTKLGpezoGj6cHYImIWoUGdyYhUVk") 
 
 # Define aiohttp routes
 routes = web.RouteTableDef()
@@ -260,7 +260,7 @@ async def stop_handler(client, message: Message):
     await message.reply_text("**<pre><code>🚦**STOPPED**🚦</code></pre>**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-@bot.on_message(filters.command("abhishek"))
+@bot.on_message(filters.command("bholu"))
 async def namaste_handler(client: Client, m: Message):
     editable = await m.reply_text('𝗦𝗲𝗻𝗱 🗂 𝗧𝗫𝗧 🗂 𝗳𝗶𝗹𝗲 𝗳𝗼𝗿 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱 [ॐ]')
 
